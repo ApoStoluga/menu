@@ -1,0 +1,48 @@
+.menu {
+    gap: .5rem 1.5rem;
+    overflow: hidden;
+    max-height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.day {
+    width: 600px;
+    gap: .5rem
+}
+
+.day__title {
+    font-size: 1.5rem;
+}
+
+.meal {
+    gap: .5rem;
+    padding-bottom: 0.25rem;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid
+    }
+}
+
+.meal__title {
+    border-left: none;
+    font-weight: bold;
+    &:after {
+        content: ':';
+    }
+}
+
+.meal__list {
+    gap: 0.25rem
+}
+.product {
+    &:not(:last-of-type) {
+        &:after {
+            content: ","
+        }
+    }
+}
+
+.product__active {
+    background: #90e7ff;
+    color: #000;
+}
